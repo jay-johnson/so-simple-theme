@@ -4,7 +4,25 @@ require "stringex"
 
 ## -- Config -- ##
 
+# extend to cover multiple users like a dev team with one blog framework:
+#
 posts_dir       = "_posts"    # directory for blog files
+#
+# convert _posts
+#
+# to
+#
+# _posts/<user>
+#
+# so the site to host user-specific blog entries from the landing page
+#
+# _posts/latest.md    -- sym linked to the latests via a rake task maybe
+# _posts/user_name_1/somepost_1.md
+# _posts/user_name_1/somepost_2.md
+# _posts/user_name_2/somepost_a.md
+# _posts/user_name_3/somepost_b.md
+
+
 new_post_ext    = "md"  # default new post file extension when using the new_post task
 new_page_ext    = "md"  # default new page file extension when using the new_page task
 
